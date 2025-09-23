@@ -1,191 +1,1547 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Uncial+Antiqua&display=swap');
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&display=swap" rel="stylesheet">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAMVIDH 2K25</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMVIDH 2K25</title>
+    <!-- Tailwind CSS CDN for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jacquard+24+Charted&display=swap" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+</style>
+    <style>
+        :root {
+            --primary-color: #6a00ff;
+            --secondary-color: #ff0080;
+            --background-dark: #0f0f1a;
+            --card-dark: #1a1a2e;
+            --text-light: #e0e0f0;
+        }
+        body {
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+              font-family: "inter", sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            scroll-behavior: smooth;
+     h9{
+        font-family: "inter", sans-serif;
+                 font-weight: 400;
+                  font-style: normal;
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+     }
+       .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+  }       
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
 
-  <style>
-    :root {
-      --primary-color: #6a00ff;
-      --secondary-color: #ff0080;
-      --background-dark: #0f0f1a;
-      --card-dark: #1a1a2e;
-      --text-light: #e0e0f0;
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+        }
+        #register-button{
+            column-count: black;
+            background-color: black;
+        }
+
+        #logo{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        #logo a{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        #logo a img{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Hero section with a vibrant gradient background */
+        .hero-bg { background-image: linear-gradient(red, blue);
+}
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--card-dark);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #7b1aff, #ff3399);
+        }
+
+        /* Subtle fade-in animation for sections */
+        .fade-in {
+            animation: fadeIn 5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+             @keyframes sparkle {
+            0% { box-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107, 0 0 15px #ffc107; }
+            50% { box-shadow: 0 0 20px #ffc107, 0 0 30px #ffc107, 0 0 40px #ffc107; }
+            100% { box-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107, 0 0 15px #ffc107; }
+        }
+
+        #celebrate-btn {
+            animation: sparkle 5s ease-in-out infinite;
+        }
+
+        /* Card hover animation */
+        .card-animate:hover {
+            transform: scale(1.03) translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Custom modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Active tab button for a visual highlight */
+        .team-tab.active, .tab-button.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+         .logo-placeholder{
+            width: 100%;
+            height: 120%;
+            }
+                   0% { box-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107, 0 0 15px #ffc107; }
+            50% { box-shadow: 0 0 20px #ffc107, 0 0 30px #ffc107, 0 0 40px #ffc107; }
+            100% { box-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107, 0 0 15px #ffc107; }
+        }
+
+        #celebrate-btn {
+            animation: sparkle 5s ease-in-out infinite;
+        }
+        #events{
+            grid-row: ;
+            flex items:center;
+            justify:center;
+            justify-items: center;
+            align-items: center;
+        }
+        body {
+  background-color: black;
+}
+
+@-webkit-keyframes last_rotate {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+    z-index: 0;
+  }
+}
+
+@keyframes last_rotate {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+    z-index: 0;
+  }
+}
+@-webkit-keyframes new_rotate {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+    z-index: 1;
+  }
+}
+@keyframes new_rotate {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+    z-index: 1;
+  }
+}
+.flip-countdown {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 4.1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+.interval_cont {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  overflow: hidden;
+}
+.interval_cont:nth-child(n+1):not(:last-child) {
+  margin-right: 0.15em;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-right: 0.55em;
+  font-size: 0.29em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7791a8;
+  text-shadow: 0.05em 0.05em 0.1em rgba(136, 110, 87, 0.3);
+  overflow: hidden;
+}
+
+.digit_cont {
+  position: relative;
+  width: 1.2em;
+  height: 1.5em;
+  font-weight: 900;
+  line-height: 1.5em;
+  border-radius: 0.25em;
+  color: #4c6377;
+  border-bottom: 0.01em solid rgba(76, 99, 119, 0.1);
+  box-shadow: 0 0.2em 0.3em -0.1em rgba(76, 99, 119, 0.1);
+  -webkit-perspective: 3em;
+          perspective: 3em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.digit_cont:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0.015em;
+  background: rgba(141, 163, 182, 0.25);
+  box-shadow: 0 0.01em 0.02em 0 rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+.digit_cont:nth-child(n+1):not(:last-child) {
+  margin-right: 0.05em;
+}
+.digit_cont span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.digit_cont .last_placeholder,
+.digit_cont .new_placeholder,
+.digit_cont .last_rotate,
+.digit_cont .new_rotate {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.digit_cont .last_placeholder {
+  bottom: 0;
+  border-radius: 0 0 0.25em 0.25em;
+  background: linear-gradient(to bottom, #dae1e8 -90%, #fff 100%), #dae1e8;
+}
+.digit_cont .new_placeholder {
+  box-shadow: inset 0 0.01em 0 0 rgba(255, 255, 255, 0.5);
+}
+.digit_cont .new_placeholder,
+.digit_cont .last_rotate,
+.digit_cont .new_rotate {
+  top: 0;
+  border-radius: 0.25em 0.25em 0 0;
+  background: linear-gradient(to bottom, #dae1e8 10%, #fff 200%), #dae1e8;
+}
+.digit_cont .last_rotate {
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  -webkit-animation: last_rotate 0.5s linear forwards;
+          animation: last_rotate 0.5s linear forwards;
+}
+.digit_cont .new_rotate {
+  border-top: 0.01em solid rgba(76, 99, 119, 0.3);
+  background: linear-gradient(to top, #dae1e8 -90%, #fff 100%), #dae1e8;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  -webkit-animation: new_rotate 0.5s linear forwards;
+          animation: new_rotate 0.5s linear forwards;
+}
+.digit_cont .new_rotate .rotated {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0.25em 0.25em;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px){
+        #heading{
+        font-size: 3rem;
     }
-    body {
-      font-family: "Inter", sans-serif;
-      background-color: var(--background-dark);
-      color: var(--text-light);
-      scroll-behavior: smooth;
+
+    .flip-countdown{
+        font-size: 2rem;
     }
-    h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-    /* Card hover */
-    .card-animate:hover {
-      transform: scale(1.03) translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    }
-    /* Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.8);
-      backdrop-filter: blur(10px);
-      z-index: 50;
-      justify-content: center;
-      align-items: center;
-    }
-    .modal-content {
-      background: var(--card-dark);
-      border-radius: 1rem;
-      padding: 2rem;
-      max-width: 600px;
-      width: 90%;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    }
-  </style>
+}
+
+    </style>
 </head>
 <body class="selection:bg-primary-color selection:text-white">
+ 
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-background-dark bg-opacity-70 backdrop-blur-md shadow-lg transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div id="logo" class="logo-placeholder w-8 h-9 rounded-full bg-gradient-to-br from-primary-color to-secondary-color flex items-center justify-center text-white font-extrabold text-xl">
+                    <a href="https://scas.sim.edu.in" target="_blank"><img src="https://scas.sim.edu.in/wp-content/uploads/2023/05/cropped-LOGO-e1685437397665.jpg"></a>
+                </div>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="text-text-light hover:text-primary-color transition-colors duration-200 text-sm font-semibold">About Us</a></li>
+                <li><a href="#events" class="text-text-light hover:text-primary-color transition-colors duration-200 text-sm font-semibold">Events</a></li>
+                <li><a href="#gallery" class="text-text-light hover:text-primary-color transition-colors duration-200 text-sm font-semibold">Gallery</a></li>
+                <li><a href="#teams" class="text-text-light hover:text-primary-color transition-colors duration-200 text-sm font-semibold">Teams</a></li>
+                <li><a href="#contact" class="text-text-light hover:text-primary-color transition-colors duration-200 text-sm font-semibold">Contact</a></li>
+            </ul>
+            <a href="https://forms.gle/2bbduQPoxbrnjnFA9" class="px-4 py-2 bg-white text-background-dark rounded-full text-gray-500 text-text-light hover:text-primary-color transition-colors duration-200 text-sm font-semibold" target="_blank">REGISTER NOW</a></li>
 
-  <!-- Header -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-background-dark bg-opacity-70 backdrop-blur-md shadow-lg">
-    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div id="logo" class="w-10 h-10 rounded-full overflow-hidden">
-        <a href="https://scas.sim.edu.in" target="_blank">
-          <img src="https://scas.sim.edu.in/wp-content/uploads/2023/05/cropped-LOGO-e1685437397665.jpg" alt="logo">
-        </a>
-      </div>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#about" class="hover:text-primary-color">About</a></li>
-        <li><a href="#events" class="hover:text-primary-color">Events</a></li>
-        <li><a href="#gallery" class="hover:text-primary-color">Gallery</a></li>
-        <li><a href="#teams" class="hover:text-primary-color">Teams</a></li>
-        <li><a href="#contact" class="hover:text-primary-color">Contact</a></li>
-      </ul>
-      <a href="https://forms.gle/2bbduQPoxbrnjnFA9" target="_blank" class="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold">REGISTER NOW</a>
-      <button id="menu-button" class="md:hidden"><i class="fas fa-bars text-xl"></i></button>
-    </nav>
-    <div id="mobile-menu" class="hidden md:hidden bg-card-dark p-4">
-      <ul class="space-y-4">
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#teams">Teams</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-4" style="background:linear-gradient(135deg,#6a00ff,#ff0080);">
-    <h1 class="text-5xl md:text-7xl font-extrabold">SAMVIDH 2K25</h1>
-    <p class="mt-4 text-xl text-gray-200">Unleash Knowledge</p>
-    <a href="#events" class="mt-6 px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transform transition">Explore Events</a>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-20 px-4">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-extrabold mb-10">About Us</h2>
-      <p class="max-w-3xl mx-auto text-gray-400">SAMVIDH is the Annual State-Level Degree College Event...</p>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="py-20 px-4 bg-card-dark">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-extrabold text-center mb-10">Last Year's Memories</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <img src="https://sim.edu.in/wp-content/uploads/2025/09/SVS_6804-scaled.jpg" class="rounded-xl shadow-lg hover:scale-105 transition">
-        <img src="https://sim.edu.in/wp-content/uploads/2025/09/SVS_7523-scaled.jpg" class="rounded-xl shadow-lg hover:scale-105 transition">
-        <img src="https://sim.edu.in/wp-content/uploads/2025/09/samidh-2vk25-scaled.jpg" class="rounded-xl shadow-lg hover:scale-105 transition">
-        <img src="https://placehold.co/400x300" class="rounded-xl shadow-lg hover:scale-105 transition">
-      </div>
-    </div>
-  </section>
-
-  <!-- Events -->
-  <section id="events" class="py-20 px-4">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-extrabold text-center mb-10">Events</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-card-dark p-4 rounded-2xl shadow-xl card-animate">
-          <img src="https://tejasai2389-rgb.github.io/looooooooogo/A.png" class="rounded-xl mb-4">
-          <h3 class="text-xl font-bold">THE AD LAB</h3>
-          <p class="text-sm text-gray-400">Students showcase creativity...</p>
+            <button id="menu-button" class="text-text-light focus:outline-none md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-card-dark p-4">
+            <ul class="space-y-4">
+                <li><a href="#about" class="block py-2 hover:text-primary-color transition-colors duration-200 text-lg">About Us</a></li>
+                <li><a href="#events" class="block py-2 hover:text-primary-color transition-colors duration-200 text-lg">Events</a></li>
+                <li><a href="#gallery" class="block py-2 hover:text-primary-color transition-colors duration-200 text-lg">Gallery</a></li>
+                <li><a href="#teams" class="block py-2 hover:text-primary-color transition-colors duration-200 text-lg">Teams</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-primary-color transition-colors duration-200 text-lg">Contact</a></li>
+            </ul>
+            <a href="https://forms.gle/2bbduQPoxbrnjnFA9" target="_blank"id="register-button" class="px-4 py-2 bg-white text-background-dark rounded-full text-gray-500 font-bold hover:bg-gray-200 transition-colors duration-200 hidden md:block">REGISTER NOW</a>
+            
+            <button id="menu-button" class="text-text-light focus:outline-none md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
         </div>
-        <!-- Repeat more event cards -->
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Teams -->
-  <section id="teams" class="py-20 px-4 bg-card-dark">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-extrabold text-center mb-10">Our Team</h2>
-      <div id="team-content" class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <!-- Team injected dynamically -->
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center text-center p-6">
+        <div class="space-y-6 fade-in">
+            <h9 id="heading" class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tighter text-blue drop-shadow-xl" >
+                SAMVIDH 2K25 <p class="text-xl md:text-2xl font-light text-gray-200 max-w-2xl mx-auto drop-shadow-md">U    n    l    e    a    s    h     -    K    n    o    w    l    e    d    g    e.
+            </p>
+            </h9>
+            <div class="flip-countdown"></div>
+            <div class="pt-4">
+                <a href="#events" id="hero-button" class="inline-block px-8 py-4 text-lg font-bold  rounded-full transition-all duration-300 transform hover:scale-105" style="background: linear-gradient(45deg, #ff0080, #6a00ff);">Explore Events</a>
+            <button id="celebrate-btn" class="mt-8 px-6 py-3 rounded-full text-lg font-semibold text-white bg-yellow-500 hover:bg-yellow-600 transition-colors duration-200">Celebrate</button>
+        </div>
+    </section>
 
-  <!-- Faculty Coordinators -->
-  <section id="faculty-coordinators" class="py-20 px-4">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-extrabold text-center mb-10">Faculty Coordinators</h2>
-      <div id="faculty-team-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <!-- Faculty injected dynamically -->
-      </div>
+    <!-- About Us Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-16 text-text-light fade-in">About Us</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                <img src="https://scas.sim.edu.in/wp-content/uploads/2025/02/SANJEEV-SIR-e1738818619350.png" alt="Sanjeev Group of Colleges" class="rounded-xl w-full md:w-1/2 object-cover shadow-2xl transition-transform duration-300 transform hover:scale-105">
+                <div class="text-left md:w-1/2">
+                    <p class="text-sm md:text-base text-gray-400 mb-4">
+                        Based in Kakinada, the Sanjeev Group of  Educational Institutions offer a comprehensive academic journey from school to postgraduate programs. For over a decade, we've focused on shaping future leaders with high-quality education, character building, and life skills. Our alumni's success reflect our commitment to excellence.
+                    </p>
+                    <p class="text-sm md:text-base text-gray-400">
+                        SAMVIDH is the highly anticipated Annual State-Level Degree College Event, organized by the Sanjeev Group of Colleges. It is a vibrant & robust platform that brings together approximately 900 (Nine hundred) young minds to showcase their talent, creativity, and innovation through a blend of technical and cultural events.
+                        SAMVIDH fosters a spirit of healthy competition and collaboration, providing a valuable opportunity for students to network, learn from their peers, and exhibit their skills to a wider audience. With an exciting mix of knowledge-driven contests, cultural showcases, and fun-filled activities, SAMVIDH-2025 promises to be an unforgettable celebration of youth and excellence. Sanjeev Group of Colleges is committed to making SAMVIDH a resounding success, contributing significantly to the holistic development of the participating students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section id="gallery" class="py-20 px-2 flex flex items-center justify-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-16 text-text-light fade-in">Last Year's Memories</h2>
+           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <img src="https://sim.edu.in/wp-content/uploads/2025/09/SVS_6804-scaled.jpg
+                " alt="Event Memory 1" class="rounded-xl w-full h-auto object-cover shadow-xl transition-transform duration-300 transform hover:scale-105 cursor-pointer">
+                <img src="https://sim.edu.in/wp-content/uploads/2025/09/SVS_7523-scaled.jpg
+                " alt="Event Memory 3" class="rounded-xl w-full h-auto object-cover shadow-xl transition-transform duration-300 transform hover:scale-105 cursor-pointer">
+                <img src="https://sim.edu.in/wp-content/uploads/2025/09/samidh-2vk25-scaled.jpg
+                " alt="Event Memory 4" class="rounded-xl w-full h-auto object-cover shadow-xl transition-transform duration-300 transform hover:scale-105 cursor-pointer">
+        </div>
+</div>
+</section>
+  <!-- THE AD LAB Modal --><section>
+<div id="THEADLAB" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">THE AD LAB</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div><h2>FOR MORE QUERIES</h2>
+<p>STUDENT CO- ORDINATOR : B Praneeth(PH 9346637413</p>
+</div>
+  <!-- THE AD LAB Modal -->
+<div id="modal-poster" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">NEURON NAVIGATORS</h3>
+      <button class="close-modal text-3xl">&times;</button>
     </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 px-4 bg-card-dark">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-extrabold mb-6">Contact Us</h2>
-      <div class="flex justify-center space-x-6">
-        <a href="https://www.instagram.com/sanjeev__group_of_colleges/" target="_blank"><i class="fab fa-instagram text-3xl hover:text-primary-color"></i></a>
-        <a href="https://www.linkedin.com/in/sanjeev-group-of-colleges/" target="_blank"><i class="fab fa-facebook text-3xl hover:text-primary-color"></i></a>
-      </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="modal-shortfilm" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">FOOD NOVA TECHNOLOGY</h3>
+      <button class="close-modal text-3xl">&times;</button>
     </div>
-  </section>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+</section>
 
-  <!-- Modal Example -->
-  <div id="THEADLAB" class="modal">
-    <div class="modal-content">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-2xl font-bold">THE AD LAB</h3>
-        <button class="close-modal text-2xl">&times;</button>
+
+
+
+    <!-- Events Section -->
+<section id="events" class="py-20 px-4 bg-card-dark">
+  <div class="container mx-auto">
+    <!-- Carousel -->
+   <!-- Events Section -->
+<section id="events" class="py-20 px-4 bg-card-dark">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-extrabold text-center mb-10">Events</h2>
+
+    <!-- Carousel -->
+    <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+      
+      <!-- Event 1 -->
+      <div data-modal-target="THEADLAB"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/A.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">THE AD LAB</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
       </div>
-      <p class="text-gray-400">Event details...</p>
+
+       <!-- Event 2 -->
+      <div data-modal-target="QUESTFEST"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/B.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">QUEST FEST</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
+      <!-- Event 3 -->
+      <div data-modal-target="TECHTACTICS"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/F.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">TECH TACTIX</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
+      <!-- Event 4 -->
+      <div data-modal-target="BUGSMASHERS"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/C.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">BUG SMASHERS</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
+      <!-- Event 5 -->
+      <div data-modal-target="CHROMOVISION"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/L.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">CHROMO VISION</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
+      <!-- Event 6 -->
+      <div data-modal-target="NEURONNAVIGATORS"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/K.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">NEURON NAVIGATORS</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
+      <!-- Event 7 -->
+      <div data-modal-target="FOODNOVATECHNOLOGY"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/M.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">FOOD NOVA TECHNOLOGY</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
     </div>
   </div>
+</section>
+<!-- THE AD LAB Modal -->
+<div id="QUESTFEST" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">QUEST FEST</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="TECHTACTICS" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">TECH TACTICS</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="BUGSMASHERS" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">BUG SMASHERS</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="CHROMOVISION" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">CHROMO VISION</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="NEURONNAVIGATORS" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">NEURON NAVIGATORS</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="FOODNOVATECHNOLOGY" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">FOOD NOVA TECHNOLOGY</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
 
-  <script>
-    // Mobile menu
-    document.getElementById('menu-button').addEventListener('click', () => {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
 
-    // Modals
-    document.querySelectorAll('[data-modal-target]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.getElementById(btn.dataset.modalTarget).style.display = 'flex';
-      });
-    });
-    document.querySelectorAll('.close-modal').forEach(btn => {
-      btn.addEventListener('click', () => btn.closest('.modal').style.display = 'none');
-    });
-  </script>
+    </section>
+
+    <!-- Gallery Section -->
+   
+</section>
+    <section id="contests" class="py-50 px-4 bg-card-dark">
+        <div class="container mx-auto">
+            <h3 class="flex justify-center align items-center text-4xl lg:text-5xl font-extrabold mb-8 fade-in".>Digital Contests</h3>
+             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">.
+        <div data-modal-target="poster"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/24.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">THE AD LAB</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+        <div id="contests"></div>
+      </div>
+
+ <div data-modal-target="short-film"
+           class="min-w-[80%] sm:min-w-[45%] lg:min-w-[22%] bg-card-dark p-4 rounded-2xl shadow-xl card-animate snap-center cursor-pointer">
+        <img src="https://tejasai2389-rgb.github.io/looooooooogo/25.png" class="rounded-xl mb-4 w-full">
+        <h3 class="text-xl font-bold">THE AD LAB</h3>
+        <p class="text-sm text-gray-400">Tap to know more...</p>
+      </div>
+
+    </section>
+<section>
+<div id="poster" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">NEURON NAVIGATORS</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div>
+<!-- THE AD LAB Modal -->
+<div id="short-film" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+  <div class="modal-content bg-card-dark p-6 rounded-xl shadow-xl max-w-md w-11/12">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-2xl font-bold">FOOD NOVA TECHNOLOGY</h3>
+      <button class="close-modal text-3xl">&times;</button>
+    </div>
+    <p class="text-gray-300 text-sm">
+      A platform for students to showcase creativity and innovation with impactful ads,
+      blending marketing skills to inspire audiences.
+    </p>
+  </div>
+</div></section>
+
+
+
+
+
+
+
+    <!-- Teams Section -->
+    <section id="teams" class="py-20 px-4 bg-card-dark">
+        <div class="container mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-16 text-text-light fade-in">Our Team</h2>
+            
+            <!-- Tabs for different teams -->
+            <div class="flex justify-center mb-12 space-x-4 flex-wrap">
+                <button class="team-tab px-6 py-3 rounded-full font-bold text-sm bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-team="students">Students</button>
+                <button class="team-tab px-6 py-3 rounded-full font-bold text-sm bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-team="leadership">Leadership</button>
+                <button class="team-tab px-6 py-3 rounded-full font-bold text-sm bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-team="hods">HODs</button>
+            </div>
+            
+            <div id="team-content">
+            </div>
+        </div>
+    </section>
+    <!-- Faculty Coordinators Section -->
+    <section id="faculty-coordinators" class="py-20 px-4" hidden>
+        <div class="container mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-16 text-text-light fade-in">Faculty Coordinators</h2>
+            <nav class="flex justify-center mb-8 space-x-2 flex-wrap">
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="sponsors">Sponsors</button>
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="registrations">Registrations</button>
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="invitations">Invitations</button>
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="management">Management & Technical Events</button>
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="food">Food & Hospitality</button>
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="disciplinary">Disciplinary</button>
+                <button class="tab-button px-4 py-2 rounded-full text-sm font-semibold bg-gray-700 hover:bg-primary-color transition-colors duration-200" data-category="stage">Stage & Anchoring</button>
+            </nav>
+            <div id="faculty-team-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Faculty cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-card-dark">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl lg:text-5xl font-extrabold mb-8 fade-in">Contact Us</h2>
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a hidden href="https://mail.google.com/mail/office@sim.edu.in" class="text-gray-400 hover:text-primary-color transition-colors duration-200"><i class="fas fa-envelope text-4xl"></i></a>
+                <a hidden href="8977665333" class="text-gray-400 hover:text-primary-color transition-colors duration-200"><i class="fas fa-phone-alt text-4xl"></i></a>
+                <a href="https://www.instagram.com/sanjeev__group_of_colleges/" class="text-gray-400 hover:text-primary-color transition-colors duration-200"><i class="fab fa-instagram text-4xl"></i></a>
+                <a href="https://www.linkedin.com/in/sanjeev-group-of-colleges/" class="text-gray-400 hover:text-primary-color transition-colors duration-200"><i class="fab fa-facebook text-4xl"></i></a>
+            </div>
+        </div>
+    </section>
+<style>
+@media (min-width: 1024px) {
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+<style>
+@media (min-width: 640px) {
+
+
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+<style>
+.gap-5 {
+    gap: 1.25rem;
+}
+<style>
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+<style>
+.grid {
+    display: grid
+;
+}
+<style>
+*, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+</style>
+
+    </div>
+    <!-- Scripts for interactivity -->
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Data for the team members
+            const studentTeams = {
+                students: [
+                    { name: 'Student 1', role: 'Main Coordinator', img: 'https://tejasai2389-rgb.github.io/looooooooogo/22.jpg' },
+                    { name: 'Student 2', role: 'Event Manager', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=S2' },
+                    { name: 'Student 3', role: 'PR Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=S3' },
+                    { name: 'Student 4', role: 'Sponsorship Lead', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=S4' },
+                ],
+                leadership: [
+                    { name: 'Chairman', role: 'Chairman', img: 'https://sipm.sim.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-10-at-16.47.25-916x1024.jpeg' },
+                    { name: 'Principal', role: 'Principal', img: 'https://scas.sim.edu.in/wp-content/uploads/2025/02/Bhuvankumar.jpg' },
+                ],
+                hods: [
+                    { name: 'HOD 1', role: 'CSE Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=H1' },
+                    { name: 'HOD 2', role: 'ECE Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=H2' },
+                    { name: 'HOD 3', role: 'EEE Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=H3' },
+                ]
+            };
+
+            const facultyTeams = {
+                sponsors: [
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+                    { name: 'V.ASWINI', role: 'Head of Sponsorship', img: 'https://tejasai2389-rgb.github.io/samvidh2025/images/8.JPG' },
+
+                ],
+                registrations: [
+                    { name: 'Mr. Ankit Verma', role: 'Registrations Lead', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MR.AV' },
+                    { name: 'Ms. Sanjana Gupta', role: 'Student Coordinator', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MS.SG' }
+                ],
+                invitations: [
+                    { name: 'Dr. Neha Singh', role: 'Guest Relations Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=DR.NS' }
+                ],
+                management: [
+                    { name: 'Dr. Sanjay Reddy', role: 'Events Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=DR.SR' },
+                    { name: 'Mr. Vikram Singh', role: 'Technical Lead', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MR.VS' }
+                ],
+                food: [
+                    { name: 'Ms. Divya Rao', role: 'Hospitality Coordinator', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MS.DR' }
+                ],
+                disciplinary: [
+                    { name: 'Mr. Rajesh Patil', role: 'Disciplinary Committee Head', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MR.RP' }
+                ],
+                stage: [
+                    { name: 'Ms. Pooja Mehta', role: 'Stage Manager', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MS.PM' },
+                    { name: 'Mr. Karan Joshi', role: 'Anchoring Lead', img: 'https://placehold.co/150x150/1a1a2e/b8b8d1?text=MR.KJ' }
+                ]
+            };
+
+            const studentTeamTabs = document.querySelectorAll('.team-tab');
+            const studentTeamContent = document.getElementById('team-content');
+            const facultyTeamTabs = document.querySelectorAll('.tab-button');
+            const facultyTeamGrid = document.getElementById('faculty-team-grid');
+
+
+            // Function to render student team members
+            const renderStudentTeam = (teamKey) => {
+                const teamData = studentTeams[teamKey];
+                if (!teamData) return;
+
+                const teamGrid = document.createElement('div');
+                teamGrid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 fade-in';
+
+                teamData.forEach(member => {
+                    const memberCard = document.createElement('div');
+                    memberCard.className = 'bg-card-dark p-6 rounded-3xl shadow-2xl text-center transition-all duration-300 transform card-animate';
+                    memberCard.innerHTML = `
+                        <img src="${member.img}" alt="${member.name}" class="rounded-full w-24 h-24 mx-auto mb-4 object-cover border-4 border-primary-color">
+                        <h4 class="text-xl font-bold text-text-light mb-1">${member.name}</h4>
+                        <p class="text-sm text-gray-400">${member.role}</p>
+                    `;
+                    teamGrid.appendChild(memberCard);
+                });
+
+                studentTeamContent.innerHTML = '';
+                studentTeamContent.appendChild(teamGrid);
+            };
+
+            // Event listeners for student team tabs
+            studentTeamTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    studentTeamTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    renderStudentTeam(tab.dataset.team);
+                });
+
+            });
+
+            // Set initial active student team tab and content
+            studentTeamTabs[0].click();
+
+            // Function to render faculty team members
+            const renderFacultyTeam = (category) => {
+                facultyTeamGrid.innerHTML = '';
+                const team = facultyTeams[category];
+                if (team) {
+                    team.forEach(member => {
+                        const card = document.createElement('div');
+                        card.className = 'bg-card-dark p-6 rounded-3xl shadow-2xl text-center transition-all duration-300 transform card-animate';
+                        card.innerHTML = `
+                            <img src="${member.img}" alt="${member.name}" class="rounded-full w-24 h-24 mx-auto mb-4 object-cover border-4 border-primary-color">
+                            <h4 class="text-xl font-bold text-text-light mb-1">${member.name}</h4>
+                            <p class="text-sm text-gray-400">${member.role}</p>
+                        `;
+                        facultyTeamGrid.appendChild(card);
+                    });
+                }
+            };
+            
+            // Event listeners for faculty tabs
+            facultyTeamTabs.forEach(button => {
+                button.addEventListener('click', () => {
+                    facultyTeamTabs.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    const category = button.getAttribute('data-category');
+                    renderFacultyTeam(category);
+                });
+            });
+
+            // Set initial active faculty tab and content
+            facultyTeamTabs[0].click();
+
+
+            // Mobile menu functionality
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Modal functionality
+            const modalButtons = document.querySelectorAll('[data-modal-target]');
+            const closeButtons = document.querySelectorAll('.close-modal');
+
+            modalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.modalTarget;
+                    const modal = document.getElementById(targetId);
+                    modal.style.display = 'flex';
+                });
+            });
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const modal = button.closest('.modal');
+                    modal.style.display = 'none';
+                });
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target.classList.contains('modal')) {
+                    event.target.style.display = 'none';
+                }
+            });
+
+            // Gemini API Integration
+            const generateIdeaButtons = document.querySelectorAll('.generate-idea-button');
+            const speakButtons = document.querySelectorAll('.speak-button');
+            const apiKey = "";
+            let audioContext;
+            let audioSource;
+
+            // Function to convert PCM audio data to WAV format
+            function pcmToWav(pcmData, sampleRate) {
+                const numChannels = 1;
+                const bytesPerSample = 2; // 16-bit PCM
+
+                const buffer = new ArrayBuffer(44 + pcmData.byteLength);
+                const view = new DataView(buffer);
+
+                // RIFF identifier
+                writeString(view, 0, 'RIFF');
+                // file length
+                view.setUint32(4, 36 + pcmData.byteLength, true);
+                // RIFF type
+                writeString(view, 8, 'WAVE');
+                // format chunk identifier
+                writeString(view, 12, 'fmt ');
+                // format chunk length
+                view.setUint32(16, 16, true);
+                // sample format (1 = PCM)
+                view.setUint16(20, 1, true);
+                // channel count
+                view.setUint16(22, numChannels, true);
+                // sample rate
+                view.setUint32(24, sampleRate, true);
+                // byte rate (sample rate * block align)
+                view.setUint32(28, sampleRate * numChannels * bytesPerSample, true);
+                // block align (channels * bytes per sample)
+                view.setUint16(32, numChannels * bytesPerSample, true);
+                // bits per sample
+                view.setUint16(34, 16, true);
+                // data chunk identifier
+                writeString(view, 36, 'data');
+                // data chunk length
+                view.setUint32(40, pcmData.byteLength, true);
+
+                // Write the PCM data
+                const pcm16 = new Int16Array(buffer, 44);
+                pcm16.set(pcmData);
+
+                return new Blob([view], { type: 'audio/wav' });
+            }
+
+            // Helper function to write a string to a DataView
+            function writeString(view, offset, string) {
+                for (let i = 0; i < string.length; i++) {
+                    view.setUint8(offset + i, string.charCodeAt(i));
+                }
+            }
+
+            // Helper function to decode base64
+            function base64ToArrayBuffer(base64) {
+                const binaryString = atob(base64);
+                const len = binaryString.length;
+                const bytes = new Uint8Array(len);
+                for (let i = 0; i < len; i++) {
+                    bytes[i] = binaryString.charCodeAt(i);
+                }
+                return bytes.buffer;
+            }
+
+            // Event listener for TTS buttons
+            speakButtons.forEach(button => {
+                button.addEventListener('click', async () => {
+                    const textId = button.dataset.targetTextId;
+                    const textElement = document.getElementById(textId);
+                    if (!textElement) return;
+                    const textToSpeak = textElement.textContent.trim();
+
+                    if (audioSource) {
+                        audioSource.stop();
+                        audioSource = null;
+                    }
+
+                    button.textContent = '...Loading';
+                    button.disabled = true;
+
+                    try {
+                        const payload = {
+                            contents: [{ parts: [{ text: textToSpeak }] }],
+                            generationConfig: {
+                                responseModalities: ["AUDIO"],
+                                speechConfig: {
+                                    voiceConfig: {
+                                        prebuiltVoiceConfig: { voiceName: "Iapetus" }
+                                    }
+                                }
+                            },
+                            model: "gemini-2.5-flash-preview-tts"
+                        };
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
+
+                        let attempts = 0;
+                        let success = false;
+                        let response;
+                        while(attempts < 3 && !success) {
+                            try {
+                                response = await fetch(apiUrl, {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify(payload)
+                                });
+                                success = true;
+                            } catch (e) {
+                                attempts++;
+                                await new Promise(res => setTimeout(res, Math.pow(2, attempts) * 1000));
+                            }
+                        }
+                        if (!success || !response.ok) {
+                             throw new Error('API call failed');
+                        }
+
+                        const result = await response.json();
+                        const part = result?.candidates?.[0]?.content?.parts?.[0];
+                        const audioData = part?.inlineData?.data;
+                        const mimeType = part?.inlineData?.mimeType;
+
+                        if (audioData && mimeType && mimeType.startsWith("audio/L16")) {
+                            if (!audioContext) {
+                                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                            }
+                            const sampleRate = parseInt(mimeType.match(/rate=(\d+)/)[1], 10);
+                            const pcmData = base64ToArrayBuffer(audioData);
+                            const pcm16 = new Int16Array(pcmData);
+
+                            const wavBlob = pcmToWav(pcm16, sampleRate);
+                            const audioUrl = URL.createObjectURL(wavBlob);
+                            const audio = new Audio(audioUrl);
+                            audio.play();
+
+                            audio.onended = () => {
+                                button.textContent = '🔊 Listen';
+                                button.disabled = false;
+                            };
+
+                        } else {
+                            throw new Error('Invalid audio data received');
+                        }
+
+                    } catch (error) {
+                        console.error("Error with TTS API:", error);
+                        button.textContent = 'Error';
+                        setTimeout(() => {
+                            button.textContent = '🔊 Listen';
+                            button.disabled = false;
+                        }, 2000);
+                    }
+                });
+            });
+
+            // Event listener for generate idea buttons
+            generateIdeaButtons.forEach(button => {
+                button.addEventListener('click', async () => {
+                    const eventName = button.dataset.eventName;
+                    const eventDescription = button.dataset.eventDescription;
+                    const ideaDiv = button.closest('.modal-content').querySelector('div[id$="Idea"]');
+
+                    ideaDiv.style.display = 'block';
+                    ideaDiv.innerHTML = '<p class="text-center text-gray-400">Loading creative idea...</p>';
+                    button.disabled = true;
+
+                    const systemInstruction = "You are an expert event planner. Generate a single, creative, and exciting new idea for a college festival event. The idea should be a short paragraph, no more than 3-4 sentences, and be directly related to the event's theme.";
+                    const userQuery = `Event Name: ${eventName}\nEvent Description: ${eventDescription}`;
+
+                    const payload = {
+                        contents: [{ parts: [{ text: userQuery }] }],
+                        systemInstruction: { parts: [{ text: systemInstruction }] }
+                    };
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                    let attempts = 0;
+                    let success = false;
+                    let response;
+                    while(attempts < 3 && !success) {
+                        try {
+                            response = await fetch(apiUrl, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(payload)
+                            });
+                            success = true;
+                        } catch (e) {
+                            attempts++;
+                            await new Promise(res => setTimeout(res, Math.pow(2, attempts) * 1000));
+                        }
+                    }
+                    if (!success || !response.ok) {
+                        ideaDiv.innerHTML = `<p class="text-center text-red-400">Failed to load idea. Please try again.</p>`;
+                        button.disabled = false;
+                        return;
+                    }
+
+                    const result = await response.json();
+                    const creativeIdea = result?.candidates?.[0]?.content?.parts?.[0]?.text || "No idea could be generated at this time.";
+                    ideaDiv.innerHTML = `
+                        <p class="font-bold text-lg mb-1">Creative Idea:</p>
+                        <p>${creativeIdea}</p>
+                    `;
+                    button.disabled = false;
+                });
+
+            });
+        });
+document.addEventListener("DOMContentLoaded", function() {
+            // Scroll-triggered animations for sections
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+});
+
+function randomInRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function celebrate(){
+    var fDura = 15 * 1000;
+    var animationEnd = Date.now() + fDura;
+    var defaults = { startVelocity: 20, spread: 360, ticks: 60, zIndex: 0, gravity: 0.1};
+
+    let i = 60;
+    var interval = setInterval(function() {
+
+        var timeLeft = animationEnd - Date.now();
+
+
+        if (timeLeft <= 0) {
+                        /*proceed.disabled = false;
+                        proceed.innerHTML = "Go to Next &#x1F382";
+                        proceed.onclick = function(){
+
+                            document.getElementById("bodyID").classList.add("animate");
+
+                            setTimeout(() => {location.replace("presentation.html");}, 5000)
+
+                            // 
+                        };*/
+            return clearInterval(interval);
+        }
+
+        var particleCount = 60 * (timeLeft / fDura);
+                    // since particles fall down, start a bit higher than random
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+    }, 250);
+
+}
+
+document.getElementById('celebrate-btn').addEventListener('click', ()=>{celebrate();});
+
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "10/14/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "UNLEASH-KNOWLEDGE";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+          celebrate();
+        }
+        //seconds
+      }, 0)
+  }());
+// == Settings ==
+const lang = 'EN'; // RU or EN description
+const typeCountdown = 'date'; // 'time' to set the countdown to a specific time or 'date' to set the countdown to the designated date
+
+let EndDate = '2025/10/14, 09:00'; // Expiration Date yyyy/mm/dd, hh:mm. Working only if typeCountdown = 'date'
+
+let days = 5; // Number of days before the end. Working only if typeCountdown = 'time'
+let timeOut = '00:00'; // 'hh:mm'. Number of hours and minutes before the end. Working only if typeCountdown = 'time'
+
+const ColorDigitEnd = '#bfbfbf';
+// == Settings END ==
+
+let hours, minutes, target_date, ExpirationDate;
+let formatCountdown = null;
+let day_lang = hour_lang = minute_lang = second_lang = '';
+
+
+function daysLeft(target) {
+    if (target > (24 * 60 * 60 * 1000)) { formatCountdown = 'day|hour|minute|second'; }
+    else if (target > (60 * 60 * 1000)) { formatCountdown = 'hour|minute|second'; }
+    else { formatCountdown = 'minute|second'; }
+}
+
+if (typeCountdown === 'time') {
+    timeOut = timeOut.split(':');
+    hours = timeOut[0];
+    minutes = timeOut[1];
+    target_date = ((days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60) * 1000);
+    
+    daysLeft(target_date);
+    target_date += new Date().getTime();
+} else if (typeCountdown === 'date') {
+    ExpirationDate = new Date(EndDate);
+    target_date = (ExpirationDate - new Date());
+    daysLeft(target_date);
+    target_date += new Date().getTime();
+}
+else {
+    target_date = 0;
+    formatCountdown = 'day|hour|minute|second';
+}
+
+if (lang === 'RU') {
+    day_lang = 'Дней';
+    hour_lang = 'Часов';
+    minute_lang = 'Минут';
+    second_lang = 'Секунд';
+} else if (lang === 'EN') {
+    day_lang = 'Days';
+    hour_lang = 'Hours';
+    minute_lang = 'Minutes';
+    second_lang = 'Seconds';
+}
+    
+class Countdown {
+    get TIMESTAMP_SECOND() { return 1000; }
+    get TIMESTAMP_MINUTE() { return 60 * this.TIMESTAMP_SECOND; }
+    get TIMESTAMP_HOUR() { return 60 * this.TIMESTAMP_MINUTE; }
+    get TIMESTAMP_DAY() { return 24 * this.TIMESTAMP_HOUR; }
+
+    constructor(userOptions) {
+        this.options = {
+            cont: null,
+            countdown: true,
+            endDate: {
+                day: 0,
+                hour: 0,
+                minute: 0,
+                second: 0 },
+            endCallback: null,
+            outputFormat: formatCountdown,
+            outputTranslation: {
+                day: day_lang,
+                hour: hour_lang,
+                minute: minute_lang,
+                second: second_lang }
+        };
+
+    this.lastTick = null;
+    this.intervalsBySize = ['day', 'hour', 'minute', 'second'];
+    this.interval = null;
+    this.digitConts = {};
+    this._assignOptions(this.options, userOptions);
+    }
+
+  start() {
+        let endDate, endDateData;
+    this._fixCompatibility();
+
+    endDate = this._getDate(this.options.endDate);
+    endDateData = this._prepareTimeByOutputFormat(endDate);
+
+    this._writeData(endDateData);
+    this.lastTick = endDateData;
+
+    if (this.options.countdown && endDate.getTime() <= Date.now()) {
+            if (typeof this.options.endCallback === 'function') {
+                this.stop();
+                this.options.endCallback();
+            }
+        } else {
+            this.interval = setInterval(() =>
+                { this._updateView(this._prepareTimeByOutputFormat(endDate)); },
+                this.TIMESTAMP_SECOND);
+        }
+    }
+    
+    stop() { if (this.interval !== null) { clearInterval(this.interval); }}
+
+    _getDate(date) {
+        if (typeof date === 'object') {
+            if (date instanceof Date) { return date; }
+            else {
+                let expectedValues = {
+                    day: 0,
+                    hour: 0,
+                    minute: 0,
+                    second: 0
+                };
+                
+                for (let i in expectedValues) {
+                    if (expectedValues.hasOwnProperty(i) && date.hasOwnProperty(i)) { expectedValues[i] = date[i]; }
+                }
+                return new Date(expectedValues.day, expectedValues.hour, expectedValues.minute, expectedValues.second);
+            }
+        } else if (typeof date === 'number' || typeof date === 'string') { return new Date(date); }
+        else { return new Date(); }
+    }
+
+    _prepareTimeByOutputFormat(dateObj) {
+        let usedIntervals, output = {}, timeDiff;
+        
+        usedIntervals = this.intervalsBySize.filter(item => { return this.options.outputFormat.split('|').indexOf(item) !== -1; });
+        
+        timeDiff = this.options.countdown ? dateObj.getTime() - Date.now() : Date.now() - dateObj.getTime();
+        
+        usedIntervals.forEach(item => {
+            let value;
+            if (timeDiff > 0) {
+                switch (item) {
+                    case 'day':
+                        value = Math.trunc(timeDiff / this.TIMESTAMP_DAY);
+                        timeDiff -= value * this.TIMESTAMP_DAY;
+                        break;
+                    case 'hour':
+                        value = Math.trunc(timeDiff / this.TIMESTAMP_HOUR);
+                        timeDiff -= value * this.TIMESTAMP_HOUR;
+                        break;
+                    case 'minute':
+                        value = Math.trunc(timeDiff / this.TIMESTAMP_MINUTE);
+                        timeDiff -= value * this.TIMESTAMP_MINUTE;
+                        break;
+                    case 'second':
+                        value = Math.trunc(timeDiff / this.TIMESTAMP_SECOND);
+                        timeDiff -= value * this.TIMESTAMP_SECOND;
+                        break;
+                }
+            } else {
+                value = '00';
+                const elements = document.querySelectorAll('.digit_cont');
+                for (let i = 0; i < elements.length; i++) { elements[i].style.color = ColorDigitEnd; }
+            }
+            output[item] = (('' + value).length < 2 ? '0' + value : '' + value).split('');
+        });
+    return output;
+  }
+    
+    _fixCompatibility() {
+        Math.trunc = Math.trunc || function (x) {
+            if (isNaN(x)) { return NaN; }
+            if (x > 0) { return Math.floor(x); }
+            return Math.ceil(x);
+        };
+    }
+
+    _writeData(data) {
+        let code = ``, intervalName;
+        
+        for (intervalName in data) {
+            if (data.hasOwnProperty(intervalName)) {
+                let element = `<div><div class="interval_cont interval_cont_${intervalName}">`,
+        intervalDescription = `<div class="description"> ${this.options.outputTranslation[intervalName]}</div>`;
+        
+                data[intervalName].forEach((digit, index) => { element += `<div class="digit_cont digit_cont_${index}" id="test">${this._getDigitElementString(digit, 0)}</div>`; });
+                
+                code += element + '</div>' + intervalDescription + '</div>';
+            }
+        }
+        this.options.cont.innerHTML = code;
+        this.lastTick = data;
+    }
+
+    _getDigitElementString(newDigit, lastDigit) {
+        return `<div class="last_placeholder"><span>${lastDigit}</span></div>
+                        <div class="new_placeholder">${newDigit}</div>
+                        <div class="last_rotate">${lastDigit}</div>
+                        <div class="new_rotate">
+                            <div class="rotated"><span>${newDigit}</span></div>
+                        </div>`;
+    }
+
+    _updateView(data) {
+        for (let intervalName in data) {
+            if (data.hasOwnProperty(intervalName)) {
+                data[intervalName].forEach((digit, index) => {
+                        if (this.lastTick !== null
+                                && this.lastTick[intervalName][index]
+                                !== data[intervalName][index])
+                        {
+                            this._getDigitCont(intervalName, index).innerHTML = this._getDigitElementString(data[intervalName][index], this.lastTick[intervalName][index]);
+                        }
+                });
+            }
+        }
+        this.lastTick = data;
+    }
+
+    _getDigitCont(intervalName, index) {
+        if (!this.digitConts[`${intervalName}_${index}`]) {
+            this.digitConts[`${intervalName}_${index}`] = this.options.cont.querySelector(`.interval_cont_${intervalName} .digit_cont_${index}`);
+        }
+        return this.digitConts[`${intervalName}_${index}`];
+    }
+
+    _assignOptions(options, userOptions) {
+        for (let i in options) {
+            if (options.hasOwnProperty(i) && userOptions.hasOwnProperty(i)) {
+                if (options[i] !== null && typeof options[i] === 'object' && typeof userOptions[i] === 'object') {
+                    this._assignOptions(options[i], userOptions[i]);
+                }
+                else { options[i] = userOptions[i]; }
+            }
+        }
+    }
+}
+
+let cd = new Countdown({
+  cont: document.querySelector('.flip-countdown'),
+  endDate: target_date,
+  outputTranslation: {
+        day: day_lang,
+        hour: hour_lang,
+        minute: minute_lang,
+        second: second_lang },
+  endCallback: null,
+  outputFormat: formatCountdown
+});
+cd.start();
+
+    </script>
 </body>
 </html>
-
